@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Drew Donaghy">
     <title>Travel Blog</title>
-    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/latest/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" type="image/png" href="images/t.png">
 </head>
@@ -19,15 +18,15 @@
     </header>
 
     <nav>
-        <div>
-            <ul>
-                <li><a href="">Home</a></li>
+        <div class="nav-left">
+            <ul class="page-links">
+                <li><a class="active" href="">Home</a></li>
                 <li><a href="#recent-blog">Recent Blogs</a></li>
                 <li><a href="#news-about">About</a></li>
             </ul>
         </div>
-        <div>
-            <ul>
+        <div class="nav-right">
+            <ul class="social-links">
                 <li><a href="https://twitter.com/">Twitter</a></li>
                 <li><a href="https://www.facebook.com/">Facebook</a></li>
                 <li><a href="https://github.com/">Github</a></li>
@@ -35,29 +34,29 @@
         </div>
     </nav>
 
-    <figure>
+    <figure class="big-image">
         <img src="images/backlit-clouds-dark-831x200.jpg" alt="Remarkable Place">
         <figcaption>Remarkable Place</figcaption>
     </figure>
 
     <main>
         <!-- recent blog -->
-        <section id="recent-blog">
+        <section id="recent-blog" class="table">
             <h3>Recent Blog</h3>
-            <div>
-                <div><img src="./images/hudson-river-valley.jpg" alt="hudson river">
+            <div class="row">
+                <div class="col"><img src="./images/hudson-river-valley.jpg" alt="hudson river">
                     <p>This is the Hudson River Valley in New York. Vinyl humblebrag tumeric neutra selfies photo booth
                         waistcoat kinfolk prism poke banh mi. Selvage gastropub flannel tumblr air plant coloring book,
                         distillery keytar asymmetrical truffaut echo park semiotics vinyl.
                     </p>
                 </div>
-                <div><img src="./images/fort-point-100x100.jpg" alt="fort point">
+                <div class="col"><img src="./images/fort-point-100x100.jpg" alt="fort point">
                     <p>Fort Point in San Francisco is a historic site. Vinyl humblebrag tumeric neutra selfies photo
                         booth waistcoat kinfolk prism poke banh mi. Selvage gastropub flannel tumblr air plant coloring
                         book, distillery keytar asymmetrical truffaut echo park semiotics vinyl.
                     </p>
                 </div>
-                <div><img src="./images/prince-william-forest.jpg" alt="">
+                <div class="col"><img src="./images/prince-william-forest.jpg" alt="">
                     <p>Prince William Forest is the located in Washington DC. Vinyl humblebrag tumeric neutra selfies
                         photo booth waistcoat kinfolk prism poke banh mi. Selvage gastropub flannel tumblr air plant
                         coloring book, distillery keytar asymmetrical truffaut echo park semiotics vinyl.</p>
@@ -65,10 +64,10 @@
             </div>
         </section>
 
-        <section id="news-about">
+        <section id="news-about" class="table">
             <h3>About</h3>
-            <div>
-                <div>
+            <div class="row">
+                <div class="col">
                     <h4>News</h4>
                     <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
                         which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot,
@@ -87,11 +86,11 @@
                         the breath.
                     </p>
                 </div>
-                <div>
+                <div class="col">
                     <h4>About</h4>
                     <p>We are interested in providing information that inspires and enhances your travel experiences.
                     </p>
-                    <div><button>Click to find out more</button></div>
+                    <div class="cta"><button class="cta-button">Click to find out more</button></div>
                 </div>
             </div>
         </section>
@@ -99,8 +98,8 @@
     </main>
 
     <footer>
-        <div>Copyright &copy; 2019-20</div>
-        <div>Drew Donaghy</div>
+        <div class="footer-left">Copyright &copy; 2019-20</div>
+        <div class="footer-right">Drew Donaghy</div>
     </footer>
 
 
